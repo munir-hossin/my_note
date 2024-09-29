@@ -2,8 +2,15 @@
 #demo {
     width: 200px;
     height: 200px;
-    background-color: grey;
+    /* background-color: grey; */
     margin: 0 auto;
     border-radius: 50%;
 }
 
+.blue {
+    background-color: blueviolet;
+}
+
+.green {
+    background-color: green;
+}
