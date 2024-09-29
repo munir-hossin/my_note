@@ -77,6 +77,7 @@ myElem.addEventListener('click', function() {
 
 
 /*
+(((((((((((((((((((((((((((((((((((((This is anis sirs class)))))))))))))))))))))))))))))))))))))
 ########################################### For learning jQuery ################################################################
 ************************************  These are My very important Note**************************************************************
 */
@@ -151,3 +152,157 @@ myElem.addEventListener('click', function() {
 //     $("h1").text(value + "is clicked")
 // })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+((((((((((((((((((((((((((((((((((((This is my teachers class note))))))))))))))))))))))))))))))))))))
+*/
+// // These are j jQuery methods 
+// .show
+// .hide
+// .toggle
+// .slideUp
+// .slideDown
+// .slideToggle();
+// .fadeIn();
+// .fadeOut();
+// .fadeToggle(); 
+// .addClass();
+// .removeClass();
+// .toggleClass();
+
+
+// Events;
+// .click;
+
+// Getter & setInterval; ##############################
+// // .html();
+// let myText = $('h1').text();
+// let myHtml = $('h1').html(); //this dose not work
+// let myVal = $('input').val();
+// let myType = $('input').attr('type');
+
+// $('h1').text('this is h1');
+// $('h1').html('<h1>what is this</h1>'); //this dose not work
+// $('input').val();
+// $('input').attr('type', 'password');
+
+
+// $('.show').click(function() {
+//     $('.box').fadeToggle();
+// })
+
+// $(".show").on("click", function() {
+//     $('.box').fadeToggle();
+// })
+
+// $("#myInput").on('focus', function() {
+//     $("#myInput").val('This is focus');
+// })
+
+// $("#myInput").on('blur', function() {
+//     let a = '#myInput'; 
+//     $(a).val('This is blur');
+// })
+
+// $("#myInput").on('blur', function() {
+//     $(this).val('This is blur');
+// })
+
+
+// $("#myInput").on('blur', function() {
+//     let value = $('#myInput').val();
+
+//     if(value == '') {
+//         $("#myInput").val('This is blur');
+//     }
+// })
+
+// ****************** input & button Hide & Show *******************************
+
+$('.my-btn').on('click', function() {
+    let btnText = $(this).text();
+    let inputText = $('input').attr('type');
+
+    if(inputText == 'password') {
+        $('input').attr('type', 'text');
+        $(this).text('Hide');
+    } else {
+        $('input').attr('type', 'password');
+        $(this).text('Show');
+    }
+})
+
+// *********************** append ..... *********
+// $('h1').append('<p>this is pa tag</p>');
+// $('h1').prepend('<p>this is pa tag</p>');
+// $('h1').after('<p>this is pa tag</p>');
+// $('h1').before('<p>this is pa tag</p>');
+// $('h1').remove();
+// $('h1').empty();
+
+//  jQuery Style ***************************
+// $('h1').css('color', 'red')
+
+$('h1').css({ 
+    color: 'yellow',
+    backgroundColor: 'red',
+    
+})
+
+// width();
+// height();
+// innerWidth();
+// innerHeight()
+
+// ********************
+// parent();
+// parents();
+// parentsUntil();
