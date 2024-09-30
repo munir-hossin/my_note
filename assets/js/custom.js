@@ -4,7 +4,6 @@
 */
 
 // let myElem = document.getElementById('demo');
-
 // myElem.addEventListener('click', function() {
 //    let color = myElem.style.backgroundColor;
 //     if (color == 'grey') {
@@ -14,8 +13,6 @@
 //     }
     
 // })
-
-
 
 
 
@@ -52,27 +49,25 @@
 ******************** How to add & remove a class name from js to html *************************
 */
 
+// let myElem = document.getElementById('demo');
 
-
-let myElem = document.getElementById('demo');
-
-myElem.addEventListener('click', function() {
-   let className = myElem.classList;
+// myElem.addEventListener('click', function() {
+//    let className = myElem.classList;
     
-   let checkClassName = className.contains('blue');
+//    let checkClassName = className.contains('blue');
 
-//    if(checkClassName == true) {
-//     myElem.classList.remove('blue');
-//     myElem.classList.add('green');
-//    } else {
-//     myElem.classList.add('blue');
-//     myElem.classList.remove('green');
-//    }
+// //    if(checkClassName == true) {
+// //     myElem.classList.remove('blue');
+// //     myElem.classList.add('green');
+// //    } else {
+// //     myElem.classList.add('blue');
+// //     myElem.classList.remove('green');
+// //    }
    
-    myElem.classList.toggle('blue');
-    myElem.classList.toggle('green');
+//     myElem.classList.toggle('blue');
+//     myElem.classList.toggle('green');
 
-})
+// })
 
 
 
@@ -153,16 +148,47 @@ myElem.addEventListener('click', function() {
 // })
 
 
+//****************************************Log in Button Start *********************************
+// $("#loginButton").click(function() {
+
+//     var password1 = $("#pass1").val();
+//     var password2 = $("#pass2").val();
 
 
+//     if(password1 != "" && password2 != "") {
+//         if( password1 == password2) {
+//             alert("your login successful")
+//         } else {
+//             alert("your password is wrong")
+//         }
+//     } else {
+//         alert("please Enter password otherwise i will beat you")
+//     }
+
+// })
+//****************************************Log in Button End *********************************
+
+//**************************************** Animation by jQuery Start  *********************************
+// $("#btn").click(function() {
+
+//     // $("#div1").show(2000);
+//     // $("#div1").hide(2000).show(2000);
+//     // $("#div1").toggle(2000);
+//     // $("#div1").fadeOut(2000);
+//     // $("#div1").fadeIn(2000);
+//     // $("#div1").fadeToggle(2000);
+//     // $("#div1").fadeTo(2000, 0.7);
+//     // $("#div1").slideUp(2000).slideDown(1000);
+//     //  $("#div1").slideToggle();
+//     //  $("#div1").animate({opacity:"0.5"},2000);
+//     //  $("#div1").animate({
+//     //     height:"400px",
+//     //     marginLeft:"400",
+//     //     width:"500px"},2000);
 
 
-
-
-
-
-
-
+// })
+//**************************************** Animation by jQuery End *********************************
 
 
 
@@ -204,7 +230,79 @@ myElem.addEventListener('click', function() {
 /*
 ((((((((((((((((((((((((((((((((((((This is my teachers class note))))))))))))))))))))))))))))))))))))
 */
-// // These are j jQuery methods 
+
+// **************** Class project-3.5------- How to bring data from server by js Start ************************
+
+// learning_bringData()
+// async function learning_bringData() {
+   
+//    try {
+//     // let response = await fetch('https://course.divinecoder.com/food-categories');
+//     let response = await fetch('https://api.restful-api.dev/objects');
+//     let data = await response.json();
+//     document.getElementById('category_list').innerHTML = '';
+
+//     data.forEach(item => {
+//         document.getElementById('category_list').innerHTML += `<button class="category_item list-unstyled bg-info p-2 mx-1 border-0">${item.name}</button>`;
+//     });
+    
+//    } catch (error) {
+//     console.log(error);
+    
+//    } 
+    
+// }
+
+// **************** Class project-3.5------- How to bring data from server by js End **************************
+// hello();
+// async function hello() {
+//     let response = await fetch('https://course.divinecoder.com/food-categories');
+//     let data = await response.json();
+    
+//     console.log(data);
+    
+// }
+
+// **************** Class project-3.5------- How to bring data from server by jQuery Start **************************
+
+// $(document).ready(function() {
+//     $("button").click(function() {
+//         $.get("https://api.restful-api.dev/objects", function(callback) {
+//             console.log(callback);
+            
+//         })
+//     })
+// })
+
+// **************** Class project-3.5------- How to bring data from server by jQuery End **************************
+
+//************************************************** Push &  post request with fetch in javascript Start********************** */
+
+// pushInServer()
+// async function pushInServer() {
+//     let option = {
+       
+//         method: "POST",
+//         headers: { "Content-type": "application/json" },
+//         body: JSON.stringify( {
+//             "name": "Apple MacBook Pro 16",
+//             "data": {
+//                "year": 2019,
+//                "price": 1849.99,
+//                "CPU model": "Intel Core i9",
+//                "Hard disk size": "1 TB"
+//             }
+//         })
+//     }
+
+//     let res = await fetch("https://api.restful-api.dev/objects", option)
+//     console.log(res);
+    
+// }
+
+//************************************************** Push & post request with fetch in javascript End********************** */
+
+//############################################## These are j jQuery methods ##################################
 // .show
 // .hide
 // .toggle
@@ -267,18 +365,18 @@ myElem.addEventListener('click', function() {
 
 // ****************** input & button Hide & Show *******************************
 
-$('.my-btn').on('click', function() {
-    let btnText = $(this).text();
-    let inputText = $('input').attr('type');
+// $('.my-btn').on('click', function() {
+//     let btnText = $(this).text();
+//     let inputText = $('input').attr('type');
 
-    if(inputText == 'password') {
-        $('input').attr('type', 'text');
-        $(this).text('Hide');
-    } else {
-        $('input').attr('type', 'password');
-        $(this).text('Show');
-    }
-})
+//     if(inputText == 'password') {
+//         $('input').attr('type', 'text');
+//         $(this).text('Hide');
+//     } else {
+//         $('input').attr('type', 'password');
+//         $(this).text('Show');
+//     }
+// })
 
 // *********************** append ..... *********
 // $('h1').append('<p>this is pa tag</p>');
@@ -291,11 +389,11 @@ $('.my-btn').on('click', function() {
 //  jQuery Style ***************************
 // $('h1').css('color', 'red')
 
-$('h1').css({ 
-    color: 'yellow',
-    backgroundColor: 'red',
+// $('h1').css({ 
+//     color: 'yellow',
+//     backgroundColor: 'red',
     
-})
+// })
 
 // width();
 // height();
@@ -306,3 +404,22 @@ $('h1').css({
 // parent();
 // parents();
 // parentsUntil();
+
+
+// // ############################ this is a slick slider ################################
+
+// $(document).ready(function() {
+//     $('.slider-container').slick({
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         arrows: true,
+//         slidesToShow: 2,
+//         dots: true,
+//         prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-right"></i></button>',
+//         nextArrow:'<button type="button" class="slick-next"><i class="fa-solid fa-chevron-left"></i></button>',
+//     });
+// })
+
+// //  ################################ slick slider End ##############################
+
+

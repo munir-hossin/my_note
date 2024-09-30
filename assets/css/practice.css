@@ -2,13 +2,13 @@
 #demo {
     width: 200px;
     height: 200px;
-    /* background-color: grey; */
     margin: 0 auto;
     border-radius: 50%;
 }
 
 .blue {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-image: linear-gradient(to right, yellow, red, yellow);
 }
 
 .green {
@@ -24,4 +24,79 @@
         height: 100px;
         border-radius: 50%;
     }
+
+    img:hover {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        transition: all ease 1s;
+    }
 }
+
+
+
+
+/************************* this Style for slick slider Start **************************/
+/* .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: transparent;
+    font-size: 28px;
+    transform: translateY(-50%);
+    z-index: 99;
+
+}
+
+.slick-next {
+    left: auto;
+    right: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 99;
+    bottom: 20px;
+    display: flex;
+
+}
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li.slick-active {
+    background-image: linear-gradient(to right, red , yellow, green, red);
+    border-radius: 50%;
+
+} */
+
+/********************* this Style for slick slider End *********************/
+
+/* animation Start */
+/* .div-style {
+    
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: tomato;
+} */
+
+/* animation End */
