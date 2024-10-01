@@ -16,6 +16,7 @@
 }
 
 .box {
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -25,11 +26,16 @@
         border-radius: 50%;
     }
 
-    img:hover {
+   
+}
+
+.box:hover {
+    img {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         transition: all ease 1s;
+       
     }
 }
 
@@ -100,3 +106,76 @@
 } */
 
 /* animation End */
+/************************************************* this calculator for practice *********************************************** */
+
+section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #e0e0e0; */
+    background-color: #99d6ee;
+    margin: 0;
+    
+}
+
+input {
+    height: 433px;
+}
+
+
+.calculator {
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #287d9f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #f0f0f0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    /* background-image: linear-gradient(to top, red, yellow, green, yellow); */
+    color: white;
+    /* border-radius: 5px; */
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    /* transform: scale(1.9); */
+    transition: all ease 1s;
+}
+
+.equals {
+    background-color: #28a745;
+}
+
+.equals:hover {
+    transform: scale(1.1);
+}
+/************************************************* this calculator for practice *********************************************** */

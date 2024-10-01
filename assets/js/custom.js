@@ -423,3 +423,280 @@
 // //  ################################ slick slider End ##############################
 
 
+
+// CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC ClassNumber 22 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+
+
+//************** JavaScript Arrays ***********************/
+// const cars = ["Saab", "Volvo", "BMW"];
+// const myHome = ["Nine Star"]
+// let myCar = ["Nme", "ldo", "Bmw"]
+// console.log(myHome);
+
+//*************** This is Hosting in js ************************/
+// carName = "Volvo";
+// var carName;         // hosting is acceptable in var
+// console.log(carName);
+
+// myName = "hello";
+// let myName;            // this some wrong * can not read
+// console.log(myName);
+
+//*********************  const & let // ************ This is block scope
+
+//############################ JavaScript Arrays ############################
+
+// let arr = ["one", "Two", "Three", "Four", "mango",{
+//     icanUse: "many type of thing in an array like number, string, true-false, & more", 
+//     myName: "munir",
+//     age: 40,
+//     class: 11,
+// }];
+// console.log(arr);
+// console.log(arr[4]);
+// // document.write(arr);
+// document.getElementsByTagName("p").innerHTML = "arr[4]";
+
+// ########################## javaScript object #####################
+// const obj = {
+//     careName: 'BMW', // you shod write value of object in string like  "hello",
+//     model: 500,
+//     weight: "1000 kg",
+//     start: function () {
+//         console.log("car has been Started");      
+//     }   
+// }
+// // console.log(obj.careName);
+// console.log(obj.start()); // if yoe wont to value of function from obj you have to call the function in log
+
+// // CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC ClassNumber 23 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// *************************** Array & object *******************************
+// let a = document.getElementById("test");
+// let b = ["hello", 10, true, 100]
+// // console.dir(a);
+// console.log(b[1]);
+
+// let student = {
+//     firstName: "Munirul",
+//     lastName: "Islam",
+//     age: 30,
+//     section: 3,
+//     address: "Dhaka",
+//     myArr: ["one", 200, true, undefined, null, "hello"]
+// }
+// console.log(student.myArr[5]);
+
+// console.log(student.firstName + ' '+ student.lastName);
+
+// // CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC ClassNumber 24 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// ********************************** javascript Operators ************************
+// Types of JavaScript Operators
+// There are different types of JavaScript operators:
+//   ***********************
+// Arithmetic Operators
+// Assignment Operators
+// Comparison Operators
+// String Operators
+// Logical Operators
+// Bitwise Operators
+// Ternary Operators
+// Type Operators
+
+//################################## Arithmetic Operators ##############################
+// let a = 20;
+// let b = 4;
+
+// output = a + b;
+// output = a - b;
+// output = a * b;
+// output = a / b;      //  Division
+// output = 2 ** 5;     //	Exponentiation (ES2016)
+  // power of 2 is five  // this is calculate like this  2*2 =4 *2=8 *2=16 *2=32; total = 32;
+// output = 10 % 3;          //Modulus (Remainder)
+// output = 100;
+// output ++;             //Increment                      
+// output --;             //Decrement                 
+
+// console.log(output);
+
+// ******************* JavaScript Assignment **************************
+// =	x = y	x = y  (2)+=	x += y	x = x + y       (3)-=	x -= y	x = x - y
+
+// ********************** Logical Assignment Operators ***************************
+// let a = 10;
+// let b = 10;
+// output = a == b && 20 == 20;     //output true
+// output = a == b && 20 == 2;     //output false
+// output = a == b || 20 == 0;     //output false
+// output = a == b || 20 == 20;    //output true   
+// output = !false;                // output true
+// console.log(output);
+
+// ********************* This a important calculate **************************** 
+// let output;
+// output = 10 * 10 / 2 + 20 - 5;   // output = 65 /=
+// // first divide second= gun third= addition fourth= decrement
+// console.log(output);
+
+//#########################  JavaScript if, else, and else if ####################
+// ************************ How to ge new data from js **************************
+
+// day = new Date().getDay();
+//     let today;
+//     if(day == 0) {
+//         today = "Sunday";
+//     }
+//     if(day == 1) {
+//         today = "Monday";
+//     }
+//     if(day == 2) {
+//         today = "Tuesday";
+//     }
+//     if(day == 3) {
+//         today = "Wednesday";
+//     }
+//     if(day == 4) {
+//         today = "Thursday";
+//     }
+//     if(day == 5) {
+//         today = "Friday";
+//     }
+//     if(day == 6) {
+//         today = "Saturday";
+//     }
+
+// console.log("Today is:",today);
+
+// day = new Date().getDay();
+// let today;
+// switch (day) {
+//     case 0:
+//         today = "Sunday";
+//         break;
+//     case 1:
+//         today = "Monday";    
+//         break;
+//         case 2:
+//         today = "Tuesday";
+//         break;
+//         case 3:
+//         today = "Wednesday"; 
+//         break;
+//         case 4:
+//         today = "Thursday";   
+//         break;
+//         case 5:
+//         today = "Friday";  
+//         break;
+//         case 6:
+//         today = "Saturday"; 
+//         break;               
+//         default:" yoe are a wrong person"
+//             break;
+// }
+// console.log("Today is:",today,"    made by Munir");
+
+//****************************** Primitive vs & Non Primitive vs Class no 24 **************************************/
+
+//****************************** The Conditional (Ternary) Operator Class no 25 **************************************/
+
+// if(a == b ) {
+//   console.log("yes");
+  
+// } else {
+//   console.log("no");
+// }
+
+// let a = 10;
+// let b = 0;
+// let newOutput = a == b ? "yes" : "no";
+// let newOutput = a == b && "yes";   // Short Circuiting (&& and ||) 
+// let newOutput = a == b || "yes";    // if answer right_mile output= true **if not right output = "yes or that word"   
+// let newOutput = a == b ?? "yes";  // output = true or false never=value "yes"
+// console.log(newOutput);
+
+// ************************* Truthy and Falsy Values **************************
+
+ /*o**************** Truthy values
+ 1. String;
+ 2. number;
+ 3. object;
+ 4. array;
+ 5. true;
+
+* o****************  Falsy values
+1. false;
+2. null;
+3. undefined;
+4. 0;
+5. -0;
+6. ''; 
+*/
+
+// let newOutput = !null;
+// let newOutput = !undefined; //output true
+// let newOutput = !394;       //output false
+// console.log(newOutput);
+
+// let product = {
+//   productName: "mobile",
+//   price: 30,
+// }
+
+// if(!product.productName ) {
+//   console.log("Please check a product first");
+  
+// } else {
+//   console.log("giv me product price now");
+  
+// }
+// ########################### function ##########################
+// function test() {
+//   console.log("this is from function"); 
+// }
+
+// test();
+
+// function test2 () {
+//   let a = 20;    //local variable
+// }
+
+// test2();
+
+//********************  Passing Arguments ************************ */
+// function student(s_name, s_bangla, s_english) {
+//   let name = s_name;
+//   let bangla = s_bangla;
+//   let english = s_english;
+
+//   let total = bangla + english;
+//   let output = (total / 2) >= 33 ? name + " is passed" : name + " is failed";
+
+//   console.log(output);
+  
+// }
+
+// student("Munir", 60, 30)
+// student("zaed", 33, 30)
+
+//************************************************* this calculator for practice *********************************************** */
+
+function appendToDisplay(value) {
+  document.getElementById('display').value += value;
+}
+
+function clearDisplay() {
+  document.getElementById('display').value = '';
+}
+
+function calculateResult() {
+  const display = document.getElementById('display');
+  try {
+      display.value = eval(display.value) || '';
+  } catch {
+      display.value = 'Error';
+      setTimeout(clearDisplay, 1500); // Clear after 1.5 seconds
+  }
+}
+//************************************************* this calculator for practice *********************************************** */
